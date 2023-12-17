@@ -51,6 +51,9 @@
 		2E8A97F92B2EF252006FA156 /* Tradera-iOS-Case-Jonas-Bergström */ = {
 			isa = PBXGroup;
 			children = (
+				2E8A98082B2EF3CA006FA156 /* Model */,
+				2E8A98092B2EF3D6006FA156 /* ViewModel */,
+				2E8A980A2B2EF3F2006FA156 /* View */,
 				2E8A97FA2B2EF252006FA156 /* Tradera_iOS_Case_Jonas_Bergstro_mApp.swift */,
 				2E8A97FC2B2EF252006FA156 /* ContentView.swift */,
 				2E8A97FE2B2EF254006FA156 /* Assets.xcassets */,
@@ -65,6 +68,28 @@
 				2E8A98012B2EF254006FA156 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2E8A98082B2EF3CA006FA156 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			path = "Modeö";
+			sourceTree = "<group>";
+		};
+		2E8A98092B2EF3D6006FA156 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2E8A980A2B2EF3F2006FA156 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
