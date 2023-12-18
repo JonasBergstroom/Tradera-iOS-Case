@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct ProductListView: View {
+    @ObservedObject var viewModel = ProductViewModel()
+
     var body: some View {
-        List {
+        List(viewModel.products) { product in
             VStack(alignment: .leading, spacing: 8) {
-                Text("The product")
+                Text(product.title)
                     .font(.headline)
-                Text("Information about product")
+                Text("\(product.price) \(product.currency)")
                     .foregroundColor(.secondary)
             }
             .padding()
