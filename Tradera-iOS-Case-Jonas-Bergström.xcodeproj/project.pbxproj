@@ -12,6 +12,7 @@
 		2E8A97FF2B2EF254006FA156 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E8A97FE2B2EF254006FA156 /* Assets.xcassets */; };
 		2E8A98022B2EF254006FA156 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E8A98012B2EF254006FA156 /* Preview Assets.xcassets */; };
 		2E8A980C2B306433006FA156 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A980B2B306433006FA156 /* Product.swift */; };
+		2E8A980E2B306531006FA156 /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A980D2B306531006FA156 /* ProductList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		2E8A97FE2B2EF254006FA156 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E8A98012B2EF254006FA156 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2E8A980B2B306433006FA156 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		2E8A980D2B306531006FA156 /* ProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				2E8A980B2B306433006FA156 /* Product.swift */,
+				2E8A980D2B306531006FA156 /* ProductList.swift */,
 			);
 			name = Model;
 			path = "Modeö";
@@ -166,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E8A97FD2B2EF252006FA156 /* ContentView.swift in Sources */,
+				2E8A980E2B306531006FA156 /* ProductList.swift in Sources */,
 				2E8A97FB2B2EF252006FA156 /* Tradera_iOS_Case_Jonas_Bergstro_mApp.swift in Sources */,
 				2E8A980C2B306433006FA156 /* Product.swift in Sources */,
 			);
