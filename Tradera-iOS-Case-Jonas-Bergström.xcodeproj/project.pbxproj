@@ -14,6 +14,7 @@
 		2E8A980C2B306433006FA156 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A980B2B306433006FA156 /* Product.swift */; };
 		2E8A980E2B306531006FA156 /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A980D2B306531006FA156 /* ProductList.swift */; };
 		2E8A98152B307482006FA156 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A98142B307482006FA156 /* ProductListView.swift */; };
+		2E8A98172B30759A006FA156 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A98162B30759A006FA156 /* ProductViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		2E8A980B2B306433006FA156 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		2E8A980D2B306531006FA156 /* ProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
 		2E8A98142B307482006FA156 /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		2E8A98162B30759A006FA156 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		2E8A98092B2EF3D6006FA156 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				2E8A98162B30759A006FA156 /* ProductViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			files = (
 				2E8A98152B307482006FA156 /* ProductListView.swift in Sources */,
 				2E8A97FD2B2EF252006FA156 /* ContentView.swift in Sources */,
+				2E8A98172B30759A006FA156 /* ProductViewModel.swift in Sources */,
 				2E8A980E2B306531006FA156 /* ProductList.swift in Sources */,
 				2E8A97FB2B2EF252006FA156 /* Tradera_iOS_Case_Jonas_Bergstro_mApp.swift in Sources */,
 				2E8A980C2B306433006FA156 /* Product.swift in Sources */,
