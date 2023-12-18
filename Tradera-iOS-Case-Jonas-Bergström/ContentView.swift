@@ -19,6 +19,15 @@ struct ContentView: View {
                     Image(systemName: "list.bullet")
                     Text("Products")
                 }
+
+                NavigationView {
+                    FavoriteProductListView()
+                        .navigationBarTitle("Favorites")
+                }
+                .tabItem {
+                    Image(systemName: "star.fill")
+                    Text("Favorites")
+                }
             }
         }
     }
