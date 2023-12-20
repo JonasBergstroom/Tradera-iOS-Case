@@ -6,15 +6,22 @@
 //
 
 import Foundation
-import Combine
 
 class ProductViewModel: ObservableObject {
     @Published var products: [Product] = []
-    
+    @Published var favorites: [Product] = []
+
     init() {
         fetchProducts()
+        fetchFavorites()
     }
     
+    func fetchFavorites() {
+            guard let data = UserDefaults.standard.data(forKey: "Favorite"),
+                  let savedFavorite = try? JSONDecoder().decode([Product].self, from: data) else { favorites = []; return }
+            favorites = savedFavorite
+        }
+
     func fetchProducts() {
         let url = "https://www.tradera.com/static/images/NO_REV/frontend-task/ProductFeedResult.json"
         
@@ -45,5 +52,28 @@ class ProductViewModel: ObservableObject {
             }
         }
         .resume()
+    }
+    
+    func saveFavorites() {
+        if let encoded = try? JSONEncoder().encode(favorites) {
+            UserDefaults.standard.set(encoded, forKey: "Favorite")
+        }
+        fetchFavorites()
+        objectWillChange.send()
+    }
+
+    func toggleFavorite(for product: Product) {
+        let currentFavoriteState = isFavorite(for: product)
+ 
+        if !currentFavoriteState {
+            favorites.append(product)
+        } else {
+            favorites.removeAll { $0.id == product.id }
+        }
+        saveFavorites()
+   }
+    
+    func isFavorite(for product: Product) -> Bool {
+        return favorites.contains { $0.id == product.id }
     }
 }

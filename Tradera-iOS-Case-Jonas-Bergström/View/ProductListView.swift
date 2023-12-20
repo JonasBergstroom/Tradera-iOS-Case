@@ -18,8 +18,8 @@ struct ProductListView: View {
                     .font(.headline)
                 Text("\(product.price) \(product.currency)")
                     .foregroundColor(.secondary)
-                FavoriteButton(isFavorite: false) {
-                    print("**Toggled**")
+                FavoriteButton(isFavorite: viewModel.isFavorite(for: product)) {
+                    viewModel.toggleFavorite(for: product)
                 }
             }
             .padding()
