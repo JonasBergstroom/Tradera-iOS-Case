@@ -9,23 +9,38 @@ import SwiftUI
 
 struct FavoriteProductListView: View {
     @ObservedObject var viewModel = ProductViewModel()
-    
+
     var body: some View {
         NavigationView {
-            List(viewModel.favorites) { product in
-                VStack(alignment: .leading, spacing: 8) {
-                    productImage(for: product)
-                    Text(product.title)
-                        .font(.headline)
-                    Text("\(product.price) \(product.currency)")
-                        .foregroundColor(.blue)
-                    FavoriteButton(isFavorite: viewModel.isFavorite(for: product)) {
-                        viewModel.toggleFavorite(for: product)
+            List {
+                ForEach(viewModel.favorites) { product in
+                    VStack(alignment: .leading, spacing: 8) {
+                        productList(for: product)
                     }
+                    .padding()
                 }
-                .padding()
+                .onDelete(perform: deleteFavorite)
             }
         }
+    }
+
+    private func productList(for product: Product) -> some View {
+        HStack {
+            productImage(for: product)
+                .frame(width: 50, height: 50)
+                .padding(.trailing, 35)
+
+            VStack(alignment: .leading, spacing: 8) {
+                Text(product.title)
+                    .font(.headline)
+                Text("\(product.price) \(product.currency)")
+                    .foregroundColor(.blue)
+            }
+        }
+    }
+
+    private func deleteFavorite(at offsets: IndexSet) {
+        viewModel.favorites.remove(atOffsets: offsets)
     }
 }
 
@@ -42,8 +57,4 @@ private func productImage(for product: Product) -> some View {
             EmptyView()
         }
     }
-}
-
-#Preview {
-    FavoriteProductListView()
 }

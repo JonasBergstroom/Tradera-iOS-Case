@@ -15,7 +15,16 @@ struct ContentView: View {
             TabView {
                 NavigationView {
                     ProductListView(viewModel: viewModel)
-                        .navigationBarTitle("Product List")
+                        .navigationTitle("Product List")
+                        .toolbar {
+                            ToolbarItem(placement: .principal) {
+                                VStack(alignment: .leading) {
+                                    Text("Click on product to add/remove favorite")
+                                        .font(.subheadline)
+                                        .foregroundColor(.secondary)
+                                }
+                            }
+                        }
                 }
                 .tabItem {
                     Image(systemName: "list.bullet")
@@ -24,7 +33,16 @@ struct ContentView: View {
 
                 NavigationView {
                     FavoriteProductListView(viewModel: viewModel)
-                        .navigationBarTitle("Favorites")
+                        .navigationTitle("Favorites")
+                        .toolbar {
+                            ToolbarItem(placement: .principal) {
+                                VStack(alignment: .leading) {
+                                    Text("Swipe to remove favorite")
+                                        .font(.subheadline)
+                                        .foregroundColor(.secondary)
+                                }
+                            }
+                        }
                 }
                 .tabItem {
                     Image(systemName: "star.fill")
