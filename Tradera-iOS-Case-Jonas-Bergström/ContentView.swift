@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var viewModel = ProductViewModel()
+
     var body: some View {
         NavigationView {
             TabView {
                 NavigationView {
-                    ProductListView()
+                    ProductListView(viewModel: viewModel)
                         .navigationBarTitle("Product List")
                 }
                 .tabItem {
@@ -21,7 +23,7 @@ struct ContentView: View {
                 }
 
                 NavigationView {
-                    FavoriteProductListView()
+                    FavoriteProductListView(viewModel: viewModel)
                         .navigationBarTitle("Favorites")
                 }
                 .tabItem {
