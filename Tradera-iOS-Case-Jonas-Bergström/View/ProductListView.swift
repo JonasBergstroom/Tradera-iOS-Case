@@ -11,19 +11,20 @@ struct ProductListView: View {
     @ObservedObject var viewModel = ProductViewModel()
     
     var body: some View {
-        List(viewModel.products) { product in
-            VStack(alignment: .leading, spacing: 8) {
-                productImage(for: product)
-                Text(product.title)
-                    .font(.headline)
-                Text("\(product.price) \(product.currency)")
-                    .foregroundColor(.secondary)
-                FavoriteButton(isFavorite: viewModel.isFavorite(for: product)) {
-                    viewModel.toggleFavorite(for: product)
+            List(viewModel.products) { product in
+                VStack(alignment: .leading, spacing: 8) {
+                    productImage(for: product)
+                    Text(product.title)
+                        .font(.headline)
+                    Text("\(product.price) \(product.currency)")
+                        .foregroundColor(.secondary)
+                    FavoriteButton(isFavorite: viewModel.isFavorite(for: product)) {
+                        viewModel.toggleFavorite(for: product)
+                    }
                 }
+                .background(Image("imagebg"))
+                .padding()
             }
-            .padding()
-        }
     }
 }
 
@@ -64,4 +65,3 @@ struct FavoriteButton: View {
         .padding(.top, 8)
     }
 }
-

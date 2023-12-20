@@ -11,7 +11,7 @@ import SwiftUI
 struct Tradera_iOS_Case_Jonas_Bergstro_mApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Welcome()
         }
     }
 }

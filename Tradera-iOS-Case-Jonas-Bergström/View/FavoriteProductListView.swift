@@ -11,32 +11,20 @@ struct FavoriteProductListView: View {
     @ObservedObject var viewModel = ProductViewModel()
 
     var body: some View {
-        NavigationView {
             List {
                 ForEach(viewModel.favorites) { product in
                     VStack(alignment: .leading, spacing: 8) {
-                        productList(for: product)
+                        productImage(for: product)
+                        Text(product.title)
+                            .font(.headline)
+                        Text("\(product.price) \(product.currency)")
+                            .foregroundColor(.secondary)
                     }
                     .padding()
                 }
                 .onDelete(perform: deleteFavorite)
             }
-        }
-    }
-
-    private func productList(for product: Product) -> some View {
-        HStack {
-            productImage(for: product)
-                .frame(width: 50, height: 50)
-                .padding(.trailing, 35)
-
-            VStack(alignment: .leading, spacing: 8) {
-                Text(product.title)
-                    .font(.headline)
-                Text("\(product.price) \(product.currency)")
-                    .foregroundColor(.blue)
-            }
-        }
+            .background(Image("imagebg"))
     }
 
     private func deleteFavorite(at offsets: IndexSet) {
