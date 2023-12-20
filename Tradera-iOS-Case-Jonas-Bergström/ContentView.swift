@@ -37,7 +37,7 @@ struct ContentView: View {
                         .toolbar {
                             ToolbarItem(placement: .principal) {
                                 VStack(alignment: .leading) {
-                                    Text("Swipe to remove favorite")
+                                    Text("Click on product to remove favorite")
                                         .font(.subheadline)
                                         .foregroundColor(.secondary)
                                 }

@@ -17,6 +17,10 @@
 		2E8A98172B30759A006FA156 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A98162B30759A006FA156 /* ProductViewModel.swift */; };
 		2E8A98192B308E47006FA156 /* FavoriteProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A98182B308E47006FA156 /* FavoriteProductListView.swift */; };
 		2E8A985B2B332FA3006FA156 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A985A2B332FA3006FA156 /* Welcome.swift */; };
+		2E8A98632B339C27006FA156 /* ProductImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A98622B339C27006FA156 /* ProductImageHelper.swift */; };
+		2E8A98652B33A412006FA156 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A98642B33A412006FA156 /* FavoriteButton.swift */; };
+		2E8A98682B33A637006FA156 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		2E8A986A2B33A637006FA156 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,8 @@
 		2E8A98162B30759A006FA156 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 		2E8A98182B308E47006FA156 /* FavoriteProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteProductListView.swift; sourceTree = "<group>"; };
 		2E8A985A2B332FA3006FA156 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
+		2E8A98622B339C27006FA156 /* ProductImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductImageHelper.swift; sourceTree = "<group>"; };
+		2E8A98642B33A412006FA156 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E8A98682B33A637006FA156 /* (null) in Frameworks */,
+				2E8A986A2B33A637006FA156 /* (null) in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +71,7 @@
 		2E8A97F92B2EF252006FA156 /* Tradera-iOS-Case-Jonas-Bergström */ = {
 			isa = PBXGroup;
 			children = (
+				2E8A98612B339C07006FA156 /* Helpers */,
 				2E8A98082B2EF3CA006FA156 /* Model */,
 				2E8A98092B2EF3D6006FA156 /* ViewModel */,
 				2E8A980A2B2EF3F2006FA156 /* View */,
@@ -105,8 +114,17 @@
 				2E8A98142B307482006FA156 /* ProductListView.swift */,
 				2E8A98182B308E47006FA156 /* FavoriteProductListView.swift */,
 				2E8A985A2B332FA3006FA156 /* Welcome.swift */,
+				2E8A98642B33A412006FA156 /* FavoriteButton.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		2E8A98612B339C07006FA156 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2E8A98622B339C27006FA156 /* ProductImageHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +143,8 @@
 			dependencies = (
 			);
 			name = "Tradera-iOS-Case-Jonas-Bergström";
+			packageProductDependencies = (
+			);
 			productName = "Tradera-iOS-Case-Jonas-Bergström";
 			productReference = 2E8A97F72B2EF252006FA156 /* Tradera-iOS-Case-Jonas-Bergström.app */;
 			productType = "com.apple.product-type.application";
@@ -153,6 +173,8 @@
 				Base,
 			);
 			mainGroup = 2E8A97EE2B2EF252006FA156;
+			packageReferences = (
+			);
 			productRefGroup = 2E8A97F82B2EF252006FA156 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -179,8 +201,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E8A98632B339C27006FA156 /* ProductImageHelper.swift in Sources */,
 				2E8A98152B307482006FA156 /* ProductListView.swift in Sources */,
 				2E8A97FD2B2EF252006FA156 /* ContentView.swift in Sources */,
+				2E8A98652B33A412006FA156 /* FavoriteButton.swift in Sources */,
 				2E8A98172B30759A006FA156 /* ProductViewModel.swift in Sources */,
 				2E8A980E2B306531006FA156 /* ProductList.swift in Sources */,
 				2E8A985B2B332FA3006FA156 /* Welcome.swift in Sources */,

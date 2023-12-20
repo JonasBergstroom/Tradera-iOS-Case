@@ -16,13 +16,13 @@ class ProductViewModel: ObservableObject {
         fetchFavorites()
     }
     
-    func fetchFavorites() {
+    private func fetchFavorites() {
             guard let data = UserDefaults.standard.data(forKey: "Favorite"),
                   let savedFavorite = try? JSONDecoder().decode([Product].self, from: data) else { favorites = []; return }
             favorites = savedFavorite
         }
 
-    func fetchProducts() {
+    private func fetchProducts() {
         let url = "https://www.tradera.com/static/images/NO_REV/frontend-task/ProductFeedResult.json"
         
         let request = URLRequest(url: URL(string: url)!)
@@ -54,12 +54,10 @@ class ProductViewModel: ObservableObject {
         .resume()
     }
     
-    func saveFavorites() {
+    private func saveFavorites() {
         if let encoded = try? JSONEncoder().encode(favorites) {
             UserDefaults.standard.set(encoded, forKey: "Favorite")
         }
-        fetchFavorites()
-        objectWillChange.send()
     }
 
     func toggleFavorite(for product: Product) {
