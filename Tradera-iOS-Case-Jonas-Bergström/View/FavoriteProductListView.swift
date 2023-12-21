@@ -9,27 +9,26 @@ import SwiftUI
 
 struct FavoriteProductListView: View {
     @ObservedObject var viewModel = ProductViewModel()
-
+    
     var body: some View {
-            List {
-                ForEach(viewModel.favorites) { product in
-                    VStack(alignment: .leading, spacing: 8) {
-                        productImage(url: product.image)
-                        Text(product.title)
-                            .font(.headline)
-                        Text("\(product.price) \(product.currency)")
-                            .foregroundColor(.blue)
-                        FavoriteButton(isFavorite: viewModel.isFavorite(for: product)) {
-                            viewModel.toggleFavorite(for: product)
-                        }
+        List {
+            ForEach(viewModel.favorites) { product in
+                VStack(alignment: .leading, spacing: 8) {
+                    productImage(url: product.image)
+                    Text(product.title)
+                        .font(.headline)
+                    Text("\(product.price) \(product.currency)")
+                        .foregroundColor(.blue)
+                    FavoriteButton(isFavorite: viewModel.isFavorite(for: product)) {
+                        viewModel.toggleFavorite(for: product)
                     }
-                    .padding()
                 }
+                .padding()
             }
-            .background(
-                Image("favoriteListEmpty")
-                    .brightness(0.1)
-            )
-        
+        }
+        .background(
+            Image("favoriteListEmpty")
+                .brightness(0.1)
+        )
     }
 }

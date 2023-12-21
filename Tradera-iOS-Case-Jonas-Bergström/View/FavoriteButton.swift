@@ -30,4 +30,3 @@ struct FavoriteButton: View {
         .padding(.top, 8)
     }
 }
-

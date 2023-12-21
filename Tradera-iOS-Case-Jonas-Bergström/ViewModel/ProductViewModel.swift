@@ -22,7 +22,7 @@ class ProductViewModel: ObservableObject {
             favorites = savedFavorite
         }
 
-    private func fetchProducts() {
+     func fetchProducts() {
         let url = "https://www.tradera.com/static/images/NO_REV/frontend-task/ProductFeedResult.json"
         
         let request = URLRequest(url: URL(string: url)!)

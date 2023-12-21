@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E125C992B346DD000FE8FDD /* Tradera_iOS_Case_Jonas_Bergstro_mTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E125C982B346DD000FE8FDD /* Tradera_iOS_Case_Jonas_Bergstro_mTests.swift */; };
+		2E125CA12B346DDC00FE8FDD /* InlineSnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 2E125CA02B346DDC00FE8FDD /* InlineSnapshotTesting */; };
+		2E125CA32B346DDC00FE8FDD /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 2E125CA22B346DDC00FE8FDD /* SnapshotTesting */; };
 		2E8A97FB2B2EF252006FA156 /* Tradera_iOS_Case_Jonas_Bergstro_mApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A97FA2B2EF252006FA156 /* Tradera_iOS_Case_Jonas_Bergstro_mApp.swift */; };
 		2E8A97FD2B2EF252006FA156 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A97FC2B2EF252006FA156 /* ContentView.swift */; };
 		2E8A97FF2B2EF254006FA156 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E8A97FE2B2EF254006FA156 /* Assets.xcassets */; };
@@ -23,8 +26,20 @@
 		2E8A986A2B33A637006FA156 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2E125C9A2B346DD000FE8FDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E8A97EF2B2EF252006FA156 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E8A97F62B2EF252006FA156;
+			remoteInfo = "Tradera-iOS-Case-Jonas-Bergström";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		2E8A97F72B2EF252006FA156 /* Tradera-iOS-Case-Jonas-Bergström.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tradera-iOS-Case-Jonas-Bergström.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E125C962B346DD000FE8FDD /* Tradera_iOS_CaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tradera_iOS_CaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E125C982B346DD000FE8FDD /* Tradera_iOS_Case_Jonas_Bergstro_mTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tradera_iOS_Case_Jonas_Bergstro_mTests.swift; sourceTree = "<group>"; };
+		2E8A97F72B2EF252006FA156 /* Tradera_iOS_Case.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tradera_iOS_Case.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8A97FA2B2EF252006FA156 /* Tradera_iOS_Case_Jonas_Bergstro_mApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tradera_iOS_Case_Jonas_Bergstro_mApp.swift; sourceTree = "<group>"; };
 		2E8A97FC2B2EF252006FA156 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2E8A97FE2B2EF254006FA156 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,6 +55,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2E125C932B346DD000FE8FDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E125CA12B346DDC00FE8FDD /* InlineSnapshotTesting in Frameworks */,
+				2E125CA32B346DDC00FE8FDD /* SnapshotTesting in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2E8A97F42B2EF252006FA156 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,10 +76,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E125C972B346DD000FE8FDD /* Tradera-iOS-Case-Jonas-BergströmTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E125C982B346DD000FE8FDD /* Tradera_iOS_Case_Jonas_Bergstro_mTests.swift */,
+			);
+			path = "Tradera-iOS-Case-Jonas-BergströmTests";
+			sourceTree = "<group>";
+		};
 		2E8A97EE2B2EF252006FA156 = {
 			isa = PBXGroup;
 			children = (
 				2E8A97F92B2EF252006FA156 /* Tradera-iOS-Case-Jonas-Bergström */,
+				2E125C972B346DD000FE8FDD /* Tradera-iOS-Case-Jonas-BergströmTests */,
 				2E8A97F82B2EF252006FA156 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,7 +96,8 @@
 		2E8A97F82B2EF252006FA156 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2E8A97F72B2EF252006FA156 /* Tradera-iOS-Case-Jonas-Bergström.app */,
+				2E8A97F72B2EF252006FA156 /* Tradera_iOS_Case.app */,
+				2E125C962B346DD000FE8FDD /* Tradera_iOS_CaseTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,9 +164,31 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2E8A97F62B2EF252006FA156 /* Tradera-iOS-Case-Jonas-Bergström */ = {
+		2E125C952B346DD000FE8FDD /* Tradera_iOS_CaseTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E8A98052B2EF254006FA156 /* Build configuration list for PBXNativeTarget "Tradera-iOS-Case-Jonas-Bergström" */;
+			buildConfigurationList = 2E125C9E2B346DD000FE8FDD /* Build configuration list for PBXNativeTarget "Tradera_iOS_CaseTests" */;
+			buildPhases = (
+				2E125C922B346DD000FE8FDD /* Sources */,
+				2E125C932B346DD000FE8FDD /* Frameworks */,
+				2E125C942B346DD000FE8FDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E125C9B2B346DD000FE8FDD /* PBXTargetDependency */,
+			);
+			name = Tradera_iOS_CaseTests;
+			packageProductDependencies = (
+				2E125CA02B346DDC00FE8FDD /* InlineSnapshotTesting */,
+				2E125CA22B346DDC00FE8FDD /* SnapshotTesting */,
+			);
+			productName = "Tradera-iOS-Case-Jonas-BergströmTests";
+			productReference = 2E125C962B346DD000FE8FDD /* Tradera_iOS_CaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2E8A97F62B2EF252006FA156 /* Tradera_iOS_Case */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E8A98052B2EF254006FA156 /* Build configuration list for PBXNativeTarget "Tradera_iOS_Case" */;
 			buildPhases = (
 				2E8A97F32B2EF252006FA156 /* Sources */,
 				2E8A97F42B2EF252006FA156 /* Frameworks */,
@@ -142,11 +198,11 @@
 			);
 			dependencies = (
 			);
-			name = "Tradera-iOS-Case-Jonas-Bergström";
+			name = Tradera_iOS_Case;
 			packageProductDependencies = (
 			);
 			productName = "Tradera-iOS-Case-Jonas-Bergström";
-			productReference = 2E8A97F72B2EF252006FA156 /* Tradera-iOS-Case-Jonas-Bergström.app */;
+			productReference = 2E8A97F72B2EF252006FA156 /* Tradera_iOS_Case.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -159,12 +215,16 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					2E125C952B346DD000FE8FDD = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 2E8A97F62B2EF252006FA156;
+					};
 					2E8A97F62B2EF252006FA156 = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
 			};
-			buildConfigurationList = 2E8A97F22B2EF252006FA156 /* Build configuration list for PBXProject "Tradera-iOS-Case-Jonas-Bergström" */;
+			buildConfigurationList = 2E8A97F22B2EF252006FA156 /* Build configuration list for PBXProject "Tradera_iOS_Case" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -174,17 +234,26 @@
 			);
 			mainGroup = 2E8A97EE2B2EF252006FA156;
 			packageReferences = (
+				2E125C9F2B346DDC00FE8FDD /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 			);
 			productRefGroup = 2E8A97F82B2EF252006FA156 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2E8A97F62B2EF252006FA156 /* Tradera-iOS-Case-Jonas-Bergström */,
+				2E8A97F62B2EF252006FA156 /* Tradera_iOS_Case */,
+				2E125C952B346DD000FE8FDD /* Tradera_iOS_CaseTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2E125C942B346DD000FE8FDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2E8A97F52B2EF252006FA156 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,6 +266,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2E125C922B346DD000FE8FDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E125C992B346DD000FE8FDD /* Tradera_iOS_Case_Jonas_Bergstro_mTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2E8A97F32B2EF252006FA156 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -216,7 +293,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2E125C9B2B346DD000FE8FDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E8A97F62B2EF252006FA156 /* Tradera_iOS_Case */;
+			targetProxy = 2E125C9A2B346DD000FE8FDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		2E125C9C2B346DD000FE8FDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7KDAWBCR66;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "con.jonas.Tradera-iOS-Case-Jonas-Bergstro-mTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tradera_iOS_Case.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tradera_iOS_Case";
+			};
+			name = Debug;
+		};
+		2E125C9D2B346DD000FE8FDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7KDAWBCR66;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "con.jonas.Tradera-iOS-Case-Jonas-Bergstro-mTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tradera_iOS_Case.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tradera_iOS_Case";
+			};
+			name = Release;
+		};
 		2E8A98032B2EF254006FA156 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -397,7 +518,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2E8A97F22B2EF252006FA156 /* Build configuration list for PBXProject "Tradera-iOS-Case-Jonas-Bergström" */ = {
+		2E125C9E2B346DD000FE8FDD /* Build configuration list for PBXNativeTarget "Tradera_iOS_CaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E125C9C2B346DD000FE8FDD /* Debug */,
+				2E125C9D2B346DD000FE8FDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E8A97F22B2EF252006FA156 /* Build configuration list for PBXProject "Tradera_iOS_Case" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2E8A98032B2EF254006FA156 /* Debug */,
@@ -406,7 +536,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E8A98052B2EF254006FA156 /* Build configuration list for PBXNativeTarget "Tradera-iOS-Case-Jonas-Bergström" */ = {
+		2E8A98052B2EF254006FA156 /* Build configuration list for PBXNativeTarget "Tradera_iOS_Case" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2E8A98062B2EF254006FA156 /* Debug */,
@@ -416,6 +546,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2E125C9F2B346DDC00FE8FDD /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.15.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2E125CA02B346DDC00FE8FDD /* InlineSnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2E125C9F2B346DDC00FE8FDD /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = InlineSnapshotTesting;
+		};
+		2E125CA22B346DDC00FE8FDD /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2E125C9F2B346DDC00FE8FDD /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2E8A97EF2B2EF252006FA156 /* Project object */;
 }
