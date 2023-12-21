@@ -19,7 +19,7 @@ struct FavoriteProductListView: View {
                         .font(.headline)
                     Text("\(product.price) \(product.currency)")
                         .foregroundColor(.blue)
-                    FavoriteButton(isFavorite: viewModel.isFavorite(for: product)) {
+                    DeleteButton(isFavorite: viewModel.isFavorite(for: product)) {
                         viewModel.toggleFavorite(for: product)
                     }
                 }
