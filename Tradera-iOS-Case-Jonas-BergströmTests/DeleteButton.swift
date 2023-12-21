@@ -1,5 +1,5 @@
 //
-//  FavoriteButtonTests.swift
+//  DeleteButton.swift
 //  Tradera_iOS_CaseTests
 //
 //  Created by Jonas Bergström on 2023-12-21.
@@ -8,11 +8,11 @@
 import XCTest
 @testable import Tradera_iOS_Case
 
-class FavoriteButtonTest: XCTestCase {
+class DeleteButtonTest: XCTestCase {
     
     func testFavoriteButtonTapping() {
         var isActionCalled = false
-        let favoriteButton = FavoriteButton(isFavorite: false) {
+        let favoriteButton = DeleteButton(isFavorite: false) {
             isActionCalled = true
         }
         
