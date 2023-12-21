@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProductListView: View {
     @ObservedObject var viewModel = ProductViewModel()
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
             List(viewModel.products) { product in
@@ -16,8 +17,9 @@ struct ProductListView: View {
                     productImage(url: product.image)
                     Text(product.title)
                         .font(.headline)
+                        .foregroundColor(colorScheme == .dark ? .black : .black)
                     Text("\(product.price) \(product.currency)")
-                        .foregroundColor(.secondary)
+                        .foregroundColor(.blue)
                     FavoriteButton(isFavorite: viewModel.isFavorite(for: product)) {
                         viewModel.toggleFavorite(for: product)
                     }
