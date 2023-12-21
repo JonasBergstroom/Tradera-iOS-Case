@@ -10,6 +10,7 @@
 		2E125C992B346DD000FE8FDD /* Tradera_iOS_Case_Jonas_Bergstro_mTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E125C982B346DD000FE8FDD /* Tradera_iOS_Case_Jonas_Bergstro_mTests.swift */; };
 		2E125CA12B346DDC00FE8FDD /* InlineSnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 2E125CA02B346DDC00FE8FDD /* InlineSnapshotTesting */; };
 		2E125CA32B346DDC00FE8FDD /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 2E125CA22B346DDC00FE8FDD /* SnapshotTesting */; };
+		2E125CB72B34888B00FE8FDD /* FavoriteButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E125CB62B34888B00FE8FDD /* FavoriteButtonTests.swift */; };
 		2E8A97FB2B2EF252006FA156 /* Tradera_iOS_Case_Jonas_Bergstro_mApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A97FA2B2EF252006FA156 /* Tradera_iOS_Case_Jonas_Bergstro_mApp.swift */; };
 		2E8A97FD2B2EF252006FA156 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A97FC2B2EF252006FA156 /* ContentView.swift */; };
 		2E8A97FF2B2EF254006FA156 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E8A97FE2B2EF254006FA156 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		2E125C962B346DD000FE8FDD /* Tradera_iOS_CaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tradera_iOS_CaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E125C982B346DD000FE8FDD /* Tradera_iOS_Case_Jonas_Bergstro_mTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tradera_iOS_Case_Jonas_Bergstro_mTests.swift; sourceTree = "<group>"; };
+		2E125CB62B34888B00FE8FDD /* FavoriteButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButtonTests.swift; sourceTree = "<group>"; };
 		2E8A97F72B2EF252006FA156 /* Tradera_iOS_Case.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tradera_iOS_Case.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8A97FA2B2EF252006FA156 /* Tradera_iOS_Case_Jonas_Bergstro_mApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tradera_iOS_Case_Jonas_Bergstro_mApp.swift; sourceTree = "<group>"; };
 		2E8A97FC2B2EF252006FA156 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				2E125C982B346DD000FE8FDD /* Tradera_iOS_Case_Jonas_Bergstro_mTests.swift */,
+				2E125CB62B34888B00FE8FDD /* FavoriteButtonTests.swift */,
 			);
 			path = "Tradera-iOS-Case-Jonas-BergströmTests";
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E125CB72B34888B00FE8FDD /* FavoriteButtonTests.swift in Sources */,
 				2E125C992B346DD000FE8FDD /* Tradera_iOS_Case_Jonas_Bergstro_mTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

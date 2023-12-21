@@ -29,4 +29,8 @@ struct FavoriteButton: View {
         }
         .padding(.top, 8)
     }
+    
+    func tap() {
+        action()
+    }
 }
