@@ -1,5 +1,5 @@
 //
-//  Tradera_iOS_Case_Jonas_Bergstro_mTests.swift
+//  ViewTest.swift
 //  Tradera-iOS-Case-Jonas-BergströmTests
 //
 //  Created by Jonas Bergström on 2023-12-21.

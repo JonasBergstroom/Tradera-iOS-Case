@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E125C992B346DD000FE8FDD /* Tradera_iOS_Case_Jonas_Bergstro_mTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E125C982B346DD000FE8FDD /* Tradera_iOS_Case_Jonas_Bergstro_mTests.swift */; };
+		2E125C992B346DD000FE8FDD /* ViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E125C982B346DD000FE8FDD /* ViewTest.swift */; };
 		2E125CA12B346DDC00FE8FDD /* InlineSnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 2E125CA02B346DDC00FE8FDD /* InlineSnapshotTesting */; };
 		2E125CA32B346DDC00FE8FDD /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 2E125CA22B346DDC00FE8FDD /* SnapshotTesting */; };
 		2E125CB72B34888B00FE8FDD /* FavoriteButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E125CB62B34888B00FE8FDD /* FavoriteButtonTests.swift */; };
@@ -41,7 +41,7 @@
 
 /* Begin PBXFileReference section */
 		2E125C962B346DD000FE8FDD /* Tradera_iOS_CaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tradera_iOS_CaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E125C982B346DD000FE8FDD /* Tradera_iOS_Case_Jonas_Bergstro_mTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tradera_iOS_Case_Jonas_Bergstro_mTests.swift; sourceTree = "<group>"; };
+		2E125C982B346DD000FE8FDD /* ViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTest.swift; sourceTree = "<group>"; };
 		2E125CB62B34888B00FE8FDD /* FavoriteButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButtonTests.swift; sourceTree = "<group>"; };
 		2E125CBB2B34D51F00FE8FDD /* DeleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButton.swift; sourceTree = "<group>"; };
 		2E125CBE2B34D7DB00FE8FDD /* DeleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButton.swift; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 		2E125C972B346DD000FE8FDD /* Tradera-iOS-Case-Jonas-BergströmTests */ = {
 			isa = PBXGroup;
 			children = (
-				2E125C982B346DD000FE8FDD /* Tradera_iOS_Case_Jonas_Bergstro_mTests.swift */,
+				2E125C982B346DD000FE8FDD /* ViewTest.swift */,
 				2E125CB62B34888B00FE8FDD /* FavoriteButtonTests.swift */,
 				2E125CBE2B34D7DB00FE8FDD /* DeleteButton.swift */,
 			);
@@ -280,7 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E125CB72B34888B00FE8FDD /* FavoriteButtonTests.swift in Sources */,
-				2E125C992B346DD000FE8FDD /* Tradera_iOS_Case_Jonas_Bergstro_mTests.swift in Sources */,
+				2E125C992B346DD000FE8FDD /* ViewTest.swift in Sources */,
 				2E125CBF2B34D7DB00FE8FDD /* DeleteButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
